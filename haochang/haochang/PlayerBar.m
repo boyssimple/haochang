@@ -65,7 +65,7 @@
     _lbStatus = [[UILabel alloc]initWithFrame:CGRectZero];
     _lbStatus.font = [UIFont systemFontOfSize:10];
     _lbStatus.textColor = [UIColor redColor];
-    _lbStatus.text = @"播放中";
+    _lbStatus.text = @"缓冲中";
     [self addSubview:_lbStatus];
 }
 
@@ -108,6 +108,7 @@
     }
     
     if ([MusicManager shareInfo].isPlay) {
+        self.lbStatus.text = @"播放中";
         [UIView beginAnimations:@"rzoration" context:nil];
         [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
         self.ivImg.transform = CGAffineTransformRotate(self.ivImg.transform, 0.02);
@@ -119,8 +120,10 @@
     UIButton *btn = sender;
     if ([MusicManager shareInfo].isPlay == YES) {
         [btn setImage:[UIImage imageNamed:@"play"] forState:(UIControlStateNormal)];
+        self.lbStatus.text = @"暂停";
     }else{
         [btn setImage:[UIImage imageNamed:@"pause"] forState:(UIControlStateNormal)];
+        self.lbStatus.text = @"播放中";
     }
     [[MusicManager shareInfo] playAndPause];
 }

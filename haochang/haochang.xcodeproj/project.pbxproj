@@ -540,6 +540,7 @@
 				TargetAttributes = {
 					29D889931D261C090065EBE1 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = A57W3P5J93;
 					};
 					29D889AC1D261C090065EBE1 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -815,6 +816,7 @@
 			baseConfigurationReference = 4AB3F90B572F349C4B4A7093 /* Pods-haochang.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A57W3P5J93;
 				GCC_PREFIX_HEADER = haochang/PrefixHeader.pch;
 				INFOPLIST_FILE = haochang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -828,6 +830,7 @@
 			baseConfigurationReference = BBA8CFEAEE37AC966CBF8EA9 /* Pods-haochang.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A57W3P5J93;
 				GCC_PREFIX_HEADER = haochang/PrefixHeader.pch;
 				INFOPLIST_FILE = haochang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
